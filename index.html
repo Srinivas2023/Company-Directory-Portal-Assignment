@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Company Directory Portal</h1>
+
+    <section class="registration-form">
+        <h2>Employee Registration Form</h2>
+        <form id="employeeForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="department">Department:</label>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option value="HR">HR</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Sales">Sales</option>
+            </select>
+
+            <label for="employeeId">Employee ID:</label>
+            <input type="number" id="employeeId" required>
+
+            <label for="profilePicture">Profile Picture URL:</label>
+            <input type="url" id="profilePicture" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="employee-list">
+        <h2>Employee List</h2>
+        <ol id="employeeList"></ol>
+    </section>
+
+    <section class="employee-details">
+        <h2>Employee Details</h2>
+        <table id="employeeDetailsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody id="employeeDetailsBody"></tbody>
+        </table>
+    </section>
+
+    <section class="map">
+        <h2>Company Location</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3763802109264!2d144.9631573155962!3d-37.814107979751924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0c3df6c7%3A0x11faff1af9a567a3!2sCompany%20Name!5e0!3m2!1sen!2sus!4v1621234567890!5m2!1sen!2sus" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
